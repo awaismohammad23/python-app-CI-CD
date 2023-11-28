@@ -16,7 +16,7 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t awaismohammad23/assignment_4_q1:latest -f Dockerfile .
-    
+
     - name: Log in to DockerHub
       uses: docker/login-action@v1
       with:
@@ -24,5 +24,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker Image to DockerHub
-      run: docker push awaismohammad23/ubuntu_assignment_4_q1:latest
-
+      run: docker push awaismohammad23/assignment_4_q1:latest
