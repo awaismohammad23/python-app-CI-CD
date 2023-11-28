@@ -21,7 +21,7 @@ jobs:
       uses: docker/login-action@v1
       with:
         username: awaismohammad23
-        password: ${{ secrets.DOCKERHUB_TOKEN }
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker Image to DockerHub
       run: docker push awaismohammad23/ubuntu_assignment_4_q1:latest
